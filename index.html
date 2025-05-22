@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Para Jeryka</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 550px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff4e50;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .heart {
+      font-size: 2em;
+      color: red;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    /* Ocultar el iframe de YouTube */
+    .music {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Jeryka, te extraño</h1>
+    <p>
+      No hay un solo día en que no piense en ti.<br>
+      Aunque ahora no estemos juntos, quiero que sepas que mi amor por ti sigue intacto.
+    </p>
+    <p>
+      Estoy dispuesto a hacer lo que sea por recuperarte, por sanar lo que se rompió, por reconstruir lo que teníamos.<br>
+      Porque todo esto... <strong>es por ti</strong>.
+    </p>
+    <p class="heart">❤️</p>
+  </div>
+
+  <!-- Música de fondo (YouTube en modo oculto) -->
+  <div class="music">
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/EIxoC3tDGf8?autoplay=1&loop=1&playlist=EIxoC3tDGf8" 
+      frameborder="0" allow="autoplay" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
